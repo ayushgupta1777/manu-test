@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style1.css">
+        </head>
+    <body>
+        <div class="topbar">
+            <div class="topbar-right">
+                <div class="line-container">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu-search">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="menu-center">
+                <div class="menu-item">
+                    <span>Home</span>
+                </div>
+                <div class="menu-item">
+                    <span>Pages</span>
+                </div>
+                <div class="menu-item">
+                    <span>Groups</span>
+                </div>
+            </div>
+        </div>
+        <script>
+            const linecontainer = document.querySelector(".line-container");
+            const menu =document.querySelector(".menu")
+            linecontainer.addEventListener("click",() =>{
+                linecontainer.classList.toggle("active");
+                menu.classList.toggle("active");
+            });
+        </script>
+
+
+    </body>
+</html>
